@@ -1,0 +1,49 @@
+###PETICIONES PARA HACER PRUEBAS CON LA API
+@api = http://localhost:5000
+###
+GET {{api}}/departamentos
+
+###
+//@api1 = http://localhost:5000
+###
+GET {{api}}/formulario
+###
+POST {{api}}/formulario
+Content-Type: application/json
+ 
+    {
+		"Numdocument": 1000735547,
+        "Nombres":"ANDREA",
+    	"Apellidos":"GONZALEZ RIOS" ,
+    	"Iddocument":1,
+    	"Celular":3118982959,
+    	"Email":"andrea@PRUEBAS.COM",
+    	"Coddepart":25,
+    	"Codmunicip":25307,
+    	"Hatenidocreditosconentidadesfinancieras":"SI" ,
+    	"Tienereportesnegativosencentralesriesgos":"NO"
+    }
+
+###
+GET {{api}}/formulario/39576489
+
+
+###
+DELETE {{api}}/formulario/1000735547
+
+###
+PUT {{api}}/formulario/1000735547
+Content-Type: application/json
+
+{
+		"Numdocument": 2000735557,
+        "Nombres":"SERGIO STEVEN",
+    	"Apellidos":"CUESTA" ,
+    	"Iddocument":1,
+    	"Celular":3118986458,
+    	"Email":"sergio@PRUEBAS.COM",
+    	"Coddepart":11,
+    	"Codmunicip":11001,
+    	"Hatenidocreditosconentidadesfinancieras":"SI" ,
+    	"Tienereportesnegativosencentralesriesgos":"SI"
+}
